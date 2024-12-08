@@ -1,0 +1,14 @@
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\bin\Debug\net8.0\Dinica_Baturov.exe
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\bin\Debug\net8.0\Dinica_Baturov.deps.json
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\bin\Debug\net8.0\Dinica_Baturov.runtimeconfig.json
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\bin\Debug\net8.0\Dinica_Baturov.dll
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\bin\Debug\net8.0\Dinica_Baturov.pdb
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.AssemblyInfoInputs.cache
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.AssemblyInfo.cs
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.csproj.CoreCompileInputs.cache
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.dll
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\refint\Dinica_Baturov.dll
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.pdb
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\Dinica_Baturov.genruntimeconfig.cache
+C:\Users\oxana\source\repos\Dinica\Dinica_Baturov\Dinica_Baturov\obj\Debug\net8.0\ref\Dinica_Baturov.dll
