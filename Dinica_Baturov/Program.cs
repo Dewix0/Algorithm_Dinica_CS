@@ -85,21 +85,68 @@ public class Program
 {
     public static void Main()
     {
-        int vertices = 6;
-        DinicAlgorithm graph = new DinicAlgorithm(vertices);
+        // Тест 1: Простой граф
+        Console.WriteLine("Тест 1: Простой граф");
+        DinicAlgorithm graph1 = new DinicAlgorithm(4);
+        graph1.AddEdge(0, 1, 10);
+        graph1.AddEdge(0, 2, 5);
+        graph1.AddEdge(1, 2, 15);
+        graph1.AddEdge(1, 3, 10);
+        graph1.AddEdge(2, 3, 10);
 
-        // Пример добавления ребер с определенной пропускной способностью
-        graph.AddEdge(0, 1, 16);
-        graph.AddEdge(0, 2, 13);
-        graph.AddEdge(1, 2, 10);
-        graph.AddEdge(1, 3, 12);
-        graph.AddEdge(2, 1, 4);
-        graph.AddEdge(2, 4, 14);
-        graph.AddEdge(3, 2, 9);
-        graph.AddEdge(3, 5, 20);
-        graph.AddEdge(4, 3, 7);
-        graph.AddEdge(4, 5, 4);
+        int maxFlow1 = graph1.MaxFlow(0, 3);
+        Console.WriteLine($"Ожидаемый результат: 15, Реальный результат: {maxFlow1}");
+        Console.WriteLine(maxFlow1 == 15 ? "Тест пройден" : "Тест провален");
 
-        Console.WriteLine("Максимальный поток: " + graph.MaxFlow(0, 5)); // Выводим максимальный поток от узла 0 к узлу 5
+        // Тест 2: Граф с несколькими путями
+        Console.WriteLine("\nТест 2: Граф с несколькими путями");
+        DinicAlgorithm graph2 = new DinicAlgorithm(6);
+        graph2.AddEdge(0, 1, 16);
+        graph2.AddEdge(0, 2, 13);
+        graph2.AddEdge(1, 2, 10);
+        graph2.AddEdge(1, 3, 12);
+        graph2.AddEdge(2, 4, 14);
+        graph2.AddEdge(3, 5, 20);
+        graph2.AddEdge(4, 5, 4);
+
+        int maxFlow2 = graph2.MaxFlow(0, 5);
+        Console.WriteLine($"Ожидаемый результат: 23, Реальный результат: {maxFlow2}");
+        Console.WriteLine(maxFlow2 == 16 ? "Тест пройден" : "Тест провален");
+
+        // Тест 3: Граф без доступного пути
+        Console.WriteLine("\nТест 3: Граф без доступного пути");
+        DinicAlgorithm graph3 = new DinicAlgorithm(4);
+        graph3.AddEdge(0, 1, 10);
+        graph3.AddEdge(2, 3, 5);
+
+        int maxFlow3 = graph3.MaxFlow(0, 3);
+        Console.WriteLine($"Ожидаемый результат: 0, Реальный результат: {maxFlow3}");
+        Console.WriteLine(maxFlow3 == 0 ? "Тест пройден" : "Тест провален");
+
+        // Тест 4: Полносвязный граф
+        Console.WriteLine("\nТест 4: Полносвязный граф");
+        DinicAlgorithm graph4 = new DinicAlgorithm(4);
+        graph4.AddEdge(0, 1, 20);
+        graph4.AddEdge(0, 2, 10);
+        graph4.AddEdge(1, 2, 5);
+        graph4.AddEdge(1, 3, 10);
+        graph4.AddEdge(2, 3, 15);
+
+        int maxFlow4 = graph4.MaxFlow(0, 3);
+        Console.WriteLine($"Ожидаемый результат: 25, Реальный результат: {maxFlow4}");
+        Console.WriteLine(maxFlow4 == 25 ? "Тест пройден" : "Тест провален");
+
+        // Тест 5: Самопетли (должны игнорироваться)
+        Console.WriteLine("\nТест 5: Самопетли");
+        DinicAlgorithm graph5 = new DinicAlgorithm(3);
+        graph5.AddEdge(0, 1, 10);
+        graph5.AddEdge(1, 2, 5);
+        graph5.AddEdge(1, 1, 15); // Самопетля
+
+        int maxFlow5 = graph5.MaxFlow(0, 2);
+        Console.WriteLine($"Ожидаемый результат: 5, Реальный результат: {maxFlow5}");
+        Console.WriteLine(maxFlow5 == 5 ? "Тест пройден" : "Тест провален");
+
+        Console.WriteLine("\nВсе тесты завершены.");
     }
 }

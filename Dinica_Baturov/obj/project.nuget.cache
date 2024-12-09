@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GBxxzOwaubc=",
+  "dgSpecHash": "illcSQSDaM8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\oxana\\source\\repos\\Dinica\\Dinica_Baturov\\Dinica_Baturov\\Dinica_Baturov.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/daniil/Desktop/Projects/Dinica_TG/Algorithm_Dinica_CS/Dinica_Baturov/Dinica_Baturov.csproj",
+  "expectedPackageFiles": [
+    "/Users/daniil/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/daniil/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/daniil/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
